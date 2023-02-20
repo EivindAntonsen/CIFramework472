@@ -1,0 +1,22 @@
+name: .NET Framework
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.1
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build app for release
+        run: msbuild DotNet472CI.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
+      - name: Test
+        run: dotnet test ./CIFramework472.sln --verbosity normal
