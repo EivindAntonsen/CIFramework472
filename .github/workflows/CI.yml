@@ -19,7 +19,7 @@ jobs:
       - name: Create Build Directory
         run: mkdir _build
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore CIFramework472.sln
       - name: Test
         run: dotnet test --verbosity normal
       - name: Build app for release
