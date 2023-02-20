@@ -23,4 +23,4 @@ jobs:
         run: dotnet restore
         
       - name: Build app for release
-        run: msbuild CIFramework472.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
+        run: msbuild CIFramework472/CIFramework472.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
