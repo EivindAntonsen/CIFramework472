@@ -12,15 +12,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      - name: Restore dependencies
+        run: dotnet restore
         
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v1.1
         
       - name: Test
-        run: dotnet test ./CIFramework472.sln --verbosity normal
-        
-      - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet test --verbosity normal
         
       - name: Build app for release
         run: msbuild CIFramework472/CIFramework472.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
