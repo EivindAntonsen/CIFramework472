@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIFramework472", "CIFramework472\CIFramework472.csproj", "{CD38E666-BC58-4D3E-8A20-3933D43C538A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{BC1D3D60-30E1-4803-9968-5CD5FF3936B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{CD38E666-BC58-4D3E-8A20-3933D43C538A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD38E666-BC58-4D3E-8A20-3933D43C538A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD38E666-BC58-4D3E-8A20-3933D43C538A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC1D3D60-30E1-4803-9968-5CD5FF3936B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1D3D60-30E1-4803-9968-5CD5FF3936B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1D3D60-30E1-4803-9968-5CD5FF3936B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1D3D60-30E1-4803-9968-5CD5FF3936B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
