@@ -21,6 +21,6 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore CIFramework472.sln
       - name: Test
-        run: dotnet test --verbosity normal
+        run: dotnet test
       - name: Build app for release
-        run: msbuild CIFramework472/CIFramework472.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
+        run: msbuild CIFramework472/CIFramework472.csproj -t:rebuild -property:Configuration=Release
