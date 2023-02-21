@@ -15,13 +15,5 @@ namespace UnitTests
             
             Assert.True(greeting.Contains(greetee));
         }
-
-
-
-        [Test]
-        public void Test2()
-        {
-            Assert.IsTrue(1 + 1 == 3);
-        }
     }
 }
